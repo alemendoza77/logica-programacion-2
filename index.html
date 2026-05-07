@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maestro de la Temperatura | Avatar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-dark text-white">
+
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="card bg-secondary text-white shadow-lg" style="width: 25rem; border: 2px solid #A4161A;">
+            <div class="card-body text-center">
+                <h2 class="card-title mb-4" style="font-family: serif; color: #f8f9fa;">Templo del Fuego</h2>
+                <p class="card-text">Introduce la temperatura en <strong>Celsius</strong> para que los sabios realicen la conversión.</p>
+                
+                <div class="mb-3">
+                    <input type="text" id="celsiusInput" class="form-control text-center" placeholder="Ej. 45">
+                </div>
+                
+                <button onclick="convertirTemperatura()" class="btn btn-danger w-100 mb-3" style="background-color: #A4161A;">Convertir</button>
+                
+                <div id="resultado" class="mt-4 p-3 rounded" style="background-color: rgba(0,0,0,0.3); display: none;">
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

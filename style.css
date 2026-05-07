@@ -1,0 +1,25 @@
+body {
+    /* Usamos una ruta relativa. El ../ sube un nivel si es necesario, 
+       pero si el CSS está en la raíz, se usa así: */
+    background-image: url('imágenes/fondo.jpg');
+    
+    /* Esto asegura que la imagen cubra toda la pantalla */
+    background-size: cover;
+    
+    /* Esto evita que la imagen se mueva al hacer scroll */
+    background-attachment: fixed;
+    
+    /* Centra la imagen */
+    background-position: center;
+    
+    /* Evita que se repita si la imagen es pequeña */
+    background-repeat: no-repeat;
+    
+    /* Un color de fondo de respaldo (Nación del Fuego) */
+    background-color: #1a0a0a; 
+}
+
+input:focus {
+    border-color: #A4161A !important;
+    box-shadow: 0 0 8px rgba(164, 22, 26, 0.5) !important;
+}
